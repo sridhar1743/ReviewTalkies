@@ -12,6 +12,37 @@ $(document).ready(function() {
   $("#leftArrow").click(function() {
     moveLeft();
   });
+  $.ajax({
+    url: "getMovieDetailsWithId",
+    type: "POST",
+    cache: false,
+    data: {'movieId': 1},
+    success: function(result) {
+      console.log(result);
+    },
+    error: function(xhr, ajaxOptions, thrownError) {}
+  });
+  $.ajax({
+    url: "getMovieComments",
+    type: "POST",
+    cache: false,
+    data: {'movieId': 3,
+      'userId': 'sridhar1743'},
+    success: function(result) {
+      console.log(result);
+    },
+    error: function(xhr, ajaxOptions, thrownError) {}
+  });
+  $.ajax({
+    url: "getMovieRating",
+    type: "POST",
+    cache: false,
+    data: {'movieId': 7},
+    success: function(result) {
+      console.log(result);
+    },
+    error: function(xhr, ajaxOptions, thrownError) {}
+  });
 });
 function loadIntialRoll() {
   $("#leftArrow").hide();
