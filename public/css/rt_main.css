@@ -1,0 +1,85 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : Jan 5, 2017, 5:13:00 PM
+    Author     : gursr02
+*/
+body{
+    margin: 0px;
+}
+#headerlogo{
+    height: 200px;
+    margin-left: 18px;
+    margin-top: -45px;
+    margin-bottom: -16px;
+}
+#mainContainer{
+    width: 71%;
+    margin: 0 auto;
+    background-color: grey;
+}
+#slides{
+    height: 27%;
+    margin-left: 10px;
+}
+.slide{
+    background-color: white;
+    float: left;
+    height: 90%;
+    width: 10.3%;
+    margin: 0 5px;
+    border: 3px solid white;
+}
+.arrow{
+    float:left;
+    cursor: pointer;
+}
+#rightArrow{
+    margin-left: -29px;
+    margin-top: 23px;
+}
+#leftArrow{
+    margin-right: -29px;
+    margin-top: 23px;
+}
+#leftArrowContainer{
+    width: 8.78%;
+    float: left;
+    height: 100%;
+}
+#movieInfoDiv{
+    background-color: #333333;
+    width: 81%;
+    height: 191px;
+    margin: 0 auto;
+    font-family: calibri;
+}
+#movieDisplayName{
+    font-size: 47px;
+    font-style: italic;
+    margin-left: 36px;
+    padding-top: 10px;
+}
+#movieNameDesc{
+    float: left;
+    width: 60%;
+    color: white;
+}
+#movieDesc{
+    margin-left: 36px;
+}
+#userRatingLabel{
+    color: yellow;
+    font-size: 29px;
+    float: left;
+}
+#movieRating{
+    padding-top: 15px;
+}
+.star_img{
+    height: 35px;
+    margin-top: -3px;
+}
