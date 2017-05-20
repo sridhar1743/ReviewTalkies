@@ -4,5 +4,10 @@
     "keywords": ["util", "functional", "server", "client", "browser"],
     "author": "gursr02",
     "contributors": [],
-    "dependencies": {}
+    "devDependencies": {
+
+  },
+  "dependencies": {
+    "express": "^4.15.3"
+  }
 }
