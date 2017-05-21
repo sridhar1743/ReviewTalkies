@@ -4,7 +4,7 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
-<html>
+<!--<html>
     <head></head>
     <body>
         <div id="slides">
@@ -22,4 +22,16 @@ and open the template in the editor.
     </body>
 
 
-</html>
+</html>-->
+
+<div ng-controller="CarouselDemoCtrl">
+    <carousel interval="myInterval" id="main-slider" class="flexslider" >
+        <slide ng-repeat="slide in slides" active="slide.active">
+            <img ng-src="{{slide.image}}">
+            <div class="carousel-caption">
+                <h4>Slide {{$index + 1}}</h4>
+            </div>
+        </slide>
+    </carousel>
+</div>
+
