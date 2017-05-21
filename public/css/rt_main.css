@@ -57,6 +57,44 @@ body{
     margin: 0 auto;
     font-family: calibri;
 }
+#movieTypeInfoDiv{
+    background-color: #333333;
+    width: 81%;
+    height: 100px;
+    margin: 0 auto;
+    font-family: calibri;
+    color:white;
+}
+#moviePostTrialerDiv{
+    background-color: white;
+    width: 81%;
+    height: 300px;
+    margin: 0 auto;
+    font-family: calibri;
+}
+#movieTeamDetailsDiv{
+    background-color: white;
+    width: 81%;
+    height: 130px;
+    margin: 0 auto;
+    font-family: calibri;
+}
+#movieCommentsDiv{
+    background-color: black;
+    width: 81%;
+    height: 300px;
+    margin: 0 auto;
+    font-family: calibri;
+    color:white;
+}
+#moviePostCommentsDiv{
+    background-color: white;
+    width: 81%;
+    height: 100px;
+    margin: 0 auto;
+    font-family: calibri;
+    color:black;
+}
 #movieDisplayName{
     font-size: 47px;
     font-style: italic;
