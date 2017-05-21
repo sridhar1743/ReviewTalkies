@@ -1,7 +1,7 @@
 module.exports = {
-  getMovieRating: function(req, res, db) {
+  getMovieRating: function(req, res, movieRatingTable) {
     var movieId = Number(req.param("movieId"));
-    db.find({movieId: movieId}).toArray(function(err, items) {
+    movieRatingTable.find({movieId: movieId}).toArray(function(err, items) {
       res.send(items);
     });
   }

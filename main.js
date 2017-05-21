@@ -30,6 +30,10 @@ app.post('/getMovieDetailsWithId', function(req, res) {
   movieDetails.getMovieDetailsWithId(req, res, app.locals.movieListTable)
 });
 
+app.post('/getMovieList', function(req, res) {
+  movieDetails.getMovieList(req, res, app.locals.movieListTable)
+});
+
 app.post('/getMovieComments', function(req, res) {
   movieComments.getMovieComments(req, res, app.locals.movieCommentsTable)
 });
