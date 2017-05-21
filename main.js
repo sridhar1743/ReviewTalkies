@@ -23,7 +23,7 @@ app.use(mongoConnection.connect);
 
 app.get('/home', function(req, res) {
 
-  res.sendFile(__dirname + '/app/views/home.html');
+  res.sendFile(__dirname + '/public/html/home.html');
 });
 
 app.post('/getMovieDetailsWithId', function(req, res) {
