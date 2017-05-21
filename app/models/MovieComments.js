@@ -1,8 +1,8 @@
 module.exports = {
-  getMovieComments: function(req, res, db) {
+  getMovieComments: function(req, res, movieCommentsTable) {
     var userId = req.param("userId"),
         movieId = Number(req.param("movieId"));
-    db.find({userId: userId}, {movieId: movieId}).toArray(function(err, items) {
+    movieCommentsTable.find({userId: userId}, {movieId: movieId}).toArray(function(err, items) {
       res.send(items);
     });
   }
