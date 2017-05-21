@@ -68,9 +68,12 @@
 //});
 
 var app = angular.module('ui.bootstrap.demo', ['ngAnimate', 'ngSanitize', 'ui.bootstrap']);
-app.controller('CarouselDemoCtrl', function($scope) {
+
+app.controller('CarouselDemoCtrl', function($scope, allServices) {
 
   alert("demoCtrl,,,,");
+
+  $scope.onkar = true
 
   $scope.carouselTimer = 5000;
   $scope.myInterval = 5000;
@@ -78,6 +81,7 @@ app.controller('CarouselDemoCtrl', function($scope) {
   $scope.active = 0;
   var slides = $scope.slides = [];
   var currIndex = 0;
+
 
 
 // The slider being synced must be initialized first
@@ -146,12 +150,65 @@ app.controller('CarouselDemoCtrl', function($scope) {
   $scope.firstImage = function() {
     alert("hello onkaresh");
     $scope.filmName = "Dangal";
-    $scope.id = 2;
+    $scope.movieId = 2;
 
-    alert($scope.filmName);
-    alert($scope.id);
+    alert($scope.movieId);
+    //alert($scope.id);
+
+//    var data = {
+//
+//     "movieId": 1
+//    };
+
+
+    allServices.requestMovie($scope.movieId).then(function(result) {
+
+      alert(result);
+
+    }, function(error) {
+
+
+    });
 
   };
 
 
 });
+
+
+
+
+app.factory('allServices', ['$q', '$http', function($q, $http) {
+    return {
+
+      requestMovie: function(movieId) {
+
+        alert("@@@@@@@@", movieId);
+
+
+        var req = {
+          method: 'POST',
+          url: '/getMovieDetailsWithId',
+          data: {
+            movieId: movieId
+          }
+        };
+
+        var deferred = $q.defer(),
+            httpPromise = $http(req);
+        httpPromise.then(function(response) {
+
+          alert("yyyyyy", response);
+
+          deferred.resolve(response);
+        }, function(error) {
+          console.error(error);
+        });
+        return deferred.promise;
+      }
+
+    };
+
+
+  }]);
+
