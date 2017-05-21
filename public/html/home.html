@@ -1,0 +1,97 @@
+<!--<html>
+    <head>
+        <script src="/public/js/jquery3.1.js"></script>
+        <script src="/public/js/angular.min.js"></script>
+        <script src="/public/js/angular-route.js"></script>
+        <link rel="stylesheet" type="text/css" href="/public/css/rt_main.css">
+        <link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        <title>Review Talkies</title>
+    </head>
+    <body ng-app="myApp" ng-controller="mainController">
+
+        <div id="mainContainer">
+                        <div ng-include="'/public/html/headerlogo.html'"></div>
+            <div ng-include="'/public/html/slides.html'"></div>
+                        <div ng-include="'/public/html/movieInfo.html'"></div>
+        </div>
+
+        <script src="/public/js/angular-slick.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-animate.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-sanitize.js"></script>
+        <script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.5.0.js"></script>
+        <script src="../public/controller/homepageController.js"></script>
+
+
+    </body>
+</html>-->
+
+<!doctype html>
+<html ng-app="ui.bootstrap.demo">
+    <head>
+        <script src="/public/js/jquery3.1.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-animate.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-sanitize.js"></script>
+        <script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.5.0.js"></script>
+        <script src="../public/controller/homepageController.js"></script>
+        <script src="../public/js/jquery.flexslider.js"></script>
+        <link rel="stylesheet" type="text/css" href="/public/css/rt_main.css">
+        <link rel="stylesheet" type="text/css" href="/public/css/flexslider.css">
+        <link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <div ng-controller="CarouselDemoCtrl">
+            <div style="height: 305px">
+                <div id="mainContainer">
+                    <div ng-include="'/public/html/headerlogo.html'"></div>
+                    <!--                    <div ng-include="'/public/html/slides.html'"></div>-->
+
+
+                    <div>
+                        <div id="page">
+                            <div id="reviews-slider" class="flexslider">
+                                <ul class="slides">
+                                    <li ng-click="firstImage()">
+                                        <img src="public/images/roll/1.jpg">
+
+                                    </li>
+                                    <li>
+                                        <img src="public/images/roll/2.jpg"/>
+                                    </li>
+                                    <li>
+                                        <img src="public/images/roll/3.jpg" />
+
+                                    </li>
+                                    <li>
+                                        <img src="public/images/roll/4.jp " />
+                                    </li>
+
+                                    <li>
+                                        <img src="public/images/roll/5.jpg" />
+                                    </li>
+                                    <li>
+                                        <img src="public/images/roll/6.jpg" />
+                                    </li>
+                                    <li>
+                                        <img src="public/images/roll/7.jpg" />
+                                    </li>
+                                    <li>
+                                        <img src="public/images/roll/8.jpg" />
+                                    </li>
+                                    <li>
+                                        <img src="public/images/roll/9.jpg" />
+                                    </li>
+                                </ul>
+                            </div>
+                            <button ng-click="firstImage()">OK</button>
+
+                        </div>
+                    </div>
+                    <div ng-include="'/public/html/movieInfo.html'"></div>
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>
