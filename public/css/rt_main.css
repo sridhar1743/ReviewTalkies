@@ -53,17 +53,19 @@ body{
 #movieInfoDiv{
     background-color: #333333;
     width: 81%;
-    height: 191px;
+    height: 164px;
     margin: 0 auto;
     font-family: calibri;
 }
 #movieTypeInfoDiv{
     background-color: #333333;
     width: 81%;
-    height: 100px;
+    height: 49px;
     margin: 0 auto;
     font-family: calibri;
     color:white;
+    padding-left: 41px;
+    font-size: 17px;
 }
 #moviePostTrialerDiv{
     background-color: white;
@@ -78,6 +80,7 @@ body{
     height: 130px;
     margin: 0 auto;
     font-family: calibri;
+    padding-left: 13px;
 }
 #movieCommentsDiv{
     background-color: black;
@@ -109,7 +112,7 @@ body{
 #movieDesc{
     margin-left: 36px;
 }
-#userRatingLabel{
+#userRatingLabel,#authorRatingLabel{
     color: yellow;
     font-size: 29px;
     float: left;
@@ -120,4 +123,66 @@ body{
 .star_img{
     height: 35px;
     margin-top: -3px;
+    float: left;
+}
+
+#userRating,#authorRating{
+    color: white;
+    font-size: 44px;
+    float: left;
+    margin-top: -15px;
+    padding-left: 9px;
+}
+#userRatingStar,#authorRatingStar{
+    float: left;
+    padding-left: 6px;
+}
+#userRatingMaxValue,#authorRatingMaxValue{
+    font-size: 17px;
+    color: #A6ACAF;
+}
+#ratingSeperator{
+    float: left;
+    color: white;
+    font-size: 52px;
+    margin-top: -24px;
+}
+#rateThisDiv{
+    float: left;
+    width: 101px;
+    color: white;
+    font-size: 19px;
+}
+#ratethis{
+    padding-left: 40px;
+    margin-top: -8px;
+    cursor: pointer;
+}
+#userHits{
+    color: #A6ACAF;
+    font-size: 12px;
+    margin-top: -9px;
+}
+.left{
+    float: left;
+}
+#authorRatingDiv{
+    float: left;
+    margin-top: 8px;
+}
+#movieCert{
+    border-style: solid;
+    border-width: 0px 2px 0px 0px;
+    border-color: #A6ACAF;
+    padding-right: 6px;
+}
+#movieDuration,#movieType{
+    border-style: solid;
+    border-width: 0px 2px 0px 0px;
+    border-color: #A6ACAF;
+    padding-right: 6px;
+    padding-left: 6px;
+}
+#movieRelease{
+    padding-left: 6px;
 }
